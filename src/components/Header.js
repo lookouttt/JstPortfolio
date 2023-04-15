@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Bars3Icon} from '../../node_modules/@heroicons/react/24/outline'
 import jst_logo from '../app/assets/img/jst_logo.png';
 
 const Header = ({fixed}) => {
@@ -11,9 +12,7 @@ const Header = ({fixed}) => {
             </div>
             <div className='block md:hidden'>
                 <button className="flex items-center px-3 py-2 border rounded border-black hover:text-gray-500 hover:border-gray-500" type='button' onClick={() => setMenuOpen(!menuOpen)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
+                    <Bars3Icon className='h-6 w-6'/>
                 </button>
             </div>
             <div className={"w-full block md:flex md:items-center md:w-auto" + (menuOpen ? " flex" : " hidden" ) }>
@@ -26,6 +25,9 @@ const Header = ({fixed}) => {
                     </a>
                     <a href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-4">
                         Projects
+                    </a>
+                    <a href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-4">
+                        Photos
                     </a>
                     <a href="#responsive-header" className="block mt-4 md:inline-block md:mt-0 hover:text-gray-500">
                         Contact
