@@ -6,3 +6,13 @@
     font-family: "Allison";
     src: url("../src/app/assets/fonts/Allison-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../src/app/assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../src/app/assets/fonts/RobotoSlab-Bold.ttf");
+}

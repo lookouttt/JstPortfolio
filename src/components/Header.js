@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {Bars3Icon} from '../../node_modules/@heroicons/react/24/outline'
 import jst_logo from '../app/assets/img/jst_logo.png';
 
-const Header = ({fixed}) => {
+const Header = () => {
     const [ menuOpen, setMenuOpen ] = useState(false);
     return (
         <nav className="flex items-center justify-between flex-wrap bg-slate-200 p-3">
