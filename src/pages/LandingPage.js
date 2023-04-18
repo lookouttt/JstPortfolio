@@ -3,11 +3,8 @@ import bg_landing from '../app/assets/img/light_bulb.png';
 const LandingPage = () => {
     return (
         <div>
-            {/* <div 
-                className="w-[100vw] h-[40vh] sm:h-[50vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[100vh] bg-no-repeat bg-cover" 
-                style={{backgroundImage: ` url(${ bg_landing})`}}></div> */}
             <div 
-                className="bg-gradient-to-b from-stone-200 from-10% via-stone-500 via-75% to-stone-600 to-90%">
+                className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
                     <div className="container m-auto grid grid-cols-2">
                         <div className="container mx-auto text-gray-800 font-roboto_slab py-10 sm:py-20 md:py-30 lg:py-40">
                             <h1 className="py-5 px-5 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My name is Jeff Turner.</h1>
