@@ -17,13 +17,13 @@
     src: url("../src/app/assets/fonts/RobotoSlab-Bold.ttf");
 }
 
-#photo_gallery {
+/* #photo_gallery {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     #photo_gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -33,11 +33,11 @@
     #photo_gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
-#photo_gallery {
+/* #photo_gallery {
     grid-template-columns: repeat(12, 1fr);
-}
+} */
 
 #photo_gallery a img {
     transition: all .2s ease-in;
