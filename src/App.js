@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
     return (
@@ -8,7 +9,7 @@ function App() {
             <Header />
             <LandingPage />
             <AboutPage />
-            {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
+            <ProjectsPage />
         </div>
     );
 }
