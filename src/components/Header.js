@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import {Bars3Icon} from '../../node_modules/@heroicons/react/24/outline'
-import jst_logo from '../app/assets/img/jst_logo.png';
+import jst_logo from '../app/assets/img/jst_round.png';
 
 const Header = () => {
     const [ menuOpen, setMenuOpen ] = useState(false);
     return (
-        <nav className="sticky top-0 flex items-center justify-between flex-wrap bg-amber-50 p-3">
+        <nav className="sticky top-0 flex items-center justify-between flex-wrap bg-amber-50 p-3 z-50">
             <div className="flex items-center flex-shrink-0 mr-6">
                 <img className='pl-2 w-30 h-16 md:h-20' src={ jst_logo }></img>
                 <span className='font-allison font-semibold text-4xl md:text-5xl p-4 tracking-tight'>Jeffrey S Turner</span>
