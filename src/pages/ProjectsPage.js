@@ -5,7 +5,7 @@ import dbd_pic from '../app/assets/img/DBD.jpg';
 const ProjectsPage = () => {
     return (
         <div>
-            <h1 className="py-5 px-2 flex-initial w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Projects</h1>
+            <h1 className="mx-5 py-5 px-2 flex-initial w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Projects</h1>
             <div className="container mx-auto grid grid-cols-3">
                 <div className="container mx-auto overflow-hidden my-10">
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">
