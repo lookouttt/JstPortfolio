@@ -11,8 +11,8 @@ const ProjectsPage = () => {
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">
                         <img className="w-full" src={jst_pic} alt="Sunset in the mountains"/>
                         <div className="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">My Portfolio Page</div>
-                            <p class="text-gray-700 text-base">
+                            <div className="font-bold text-xl mb-2">My Portfolio Page</div>
+                            <p className="text-gray-700 text-base">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
@@ -22,8 +22,8 @@ const ProjectsPage = () => {
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">
                         <img className="w-full" src={hist_pic} alt="Sunset in the mountains"/>
                         <div className="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Music Historeum</div>
-                            <p class="text-gray-700 text-base">
+                            <div className="font-bold text-xl mb-2">Music Historeum</div>
+                            <p className="text-gray-700 text-base">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
@@ -33,8 +33,8 @@ const ProjectsPage = () => {
                     <div className="max-w-sm rounded overflow-hidden shadow-lg">
                         <img className="w-full" src={dbd_pic} alt="Sunset in the mountains"/>
                         <div className="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Dad's Best Dogs</div>
-                            <p class="text-gray-700 text-base">
+                            <div className="font-bold text-xl mb-2">Dad's Best Dogs</div>
+                            <p className="text-gray-700 text-base">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>

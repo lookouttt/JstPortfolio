@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
+
 import bee_harvest_pic from '../app/assets/img/gallery/bee_harvest.jpg';
 import eagle_pic from '../app/assets/img/gallery/eagle.jpg';
 import large_falls_pic from '../app/assets/img/gallery/large_falls.jpg';
@@ -5,62 +9,79 @@ import leaf_pic from '../app/assets/img/gallery/leaf_insect.jpg';
 import pigeon_pic from '../app/assets/img/gallery/pigeons.jpg';
 import triple_falls_pic from '../app/assets/img/gallery/triple_falls.jpg';
 
+
+
 const PhotoPage = () => {
+    const slides = [
+        {
+            url: `${bee_harvest_pic}`,
+        },
+        {
+            url: `${eagle_pic}`,
+        },
+        {
+            url: `${large_falls_pic}`,
+        },
+    
+        {
+            url: `${leaf_pic}`,
+        },
+        {
+            url: `${pigeon_pic}`,
+        },
+        {
+            url: `${triple_falls_pic}`,
+        },
+
+    ];
+    
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
+    const prevSlide = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+    };
+    
+    const nextSlide = () => {
+        const isLastSlide = currentIndex === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+    };
+    
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex);
+    };
+
     return (
         <div className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
             <h1 className="mx-5 py-5 px-2 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Photos</h1>
-            <div className="container mx-auto grid grid-cols-3 border-2" id="gallery">
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150 hover:translate-x-32 hover:translate-y-20 hover:z-10">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg ">
-                        <img className="w-full" src={bee_harvest_pic} alt="Bee harvesting pollen"/>
-                    </div>
+            <div className='max-w-[1170px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+                <div
+                    style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+                    className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+                >
                 </div>
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src={eagle_pic} alt="Eagle soaring"/>
-                    </div>
+                {/* Left Arrow */}
+                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white   cursor-pointer'>
+                    <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src={large_falls_pic} alt="Waterfall"/>
-                    </div>
+                {/* Right Arrow */}
+                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                    <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src={leaf_pic} alt="Insect on a leaf"/>
-                    </div>
-                </div>
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src={pigeon_pic} alt="Three pigeons"/>
-                    </div>
-                </div>
-                <div className="container mx-auto overflow-hidden my-10 p-3 transform transition duration-500 hover:scale-150">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src={triple_falls_pic} alt="Triple waterfall"/>
-                    </div>
+                <div className='flex top-4 justify-center py-2'>
+                    {slides.map((slide, slideIndex) => (
+                        <div
+                            key={slideIndex}
+                            onClick={() => goToSlide(slideIndex)}
+                            className='text-2xl cursor-pointer'
+                        >
+                            <RxDotFilled />
+                        </div>
+                    ))}
                 </div>
             </div>
-            {/* <div class="grid grid-cols-6 mx-auto p-8" id="photo_gallery">
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={bee_harvest_pic} alt="Bee harvesting pollen"/>
-                </a>
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={eagle_pic} alt="Soaring eagle"/>
-                </a>
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={large_falls_pic} alt="Waterfall"/>
-                </a>
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={leaf_pic} alt="Insect on leaf"/>
-                </a>
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={pigeon_pic} alt="Pigeons"/>
-                </a>
-                <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md">
-                    <img class="w-full block rounded-b" src={triple_falls_pic} alt="Triple waterfall"/>
-                </a>
-            </div> */}
         </div>
     );
 }

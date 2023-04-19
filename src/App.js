@@ -22,7 +22,7 @@ function App() {
             <AboutPage />
             <ProjectsPage />
             <PhotoPage />
-            <ContactPage styles={styles} />
+            {/* <ContactPage styles={styles} /> */}
         </div>
     );
 }
