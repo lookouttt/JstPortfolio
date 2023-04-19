@@ -17,6 +17,10 @@
     src: url("../src/app/assets/fonts/RobotoSlab-Bold.ttf");
 }
 
+div {
+    scroll-margin-top: 11rem;
+}
+
 /* #photo_gallery {
     display: grid;
     grid-template-columns: 1fr;

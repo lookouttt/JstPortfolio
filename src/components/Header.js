@@ -20,13 +20,13 @@ const Header = () => {
                     <a href="#" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
                         Home
                     </a>
-                    <a href="#about_me" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_about" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
                         About
                     </a>
-                    <a href="#responsive-header" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_projects" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
                         Projects
                     </a>
-                    <a href="#responsive-header" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_photos" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
                         Photos
                     </a>
                     <a href="#responsive-header" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500">

@@ -22,7 +22,6 @@ const PhotoPage = () => {
         {
             url: `${large_falls_pic}`,
         },
-    
         {
             url: `${leaf_pic}`,
         },
@@ -32,7 +31,6 @@ const PhotoPage = () => {
         {
             url: `${triple_falls_pic}`,
         },
-
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,32 +52,34 @@ const PhotoPage = () => {
     };
 
     return (
-        <div className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
-            <h1 className="mx-5 py-5 px-2 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Photos</h1>
-            <div className='max-w-[1170px] h-[780px] w-full m-auto py-16 px-4 relative group'>
-                <div
-                    style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                    className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-                >
-                </div>
-                {/* Left Arrow */}
-                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white   cursor-pointer'>
-                    <BsChevronCompactLeft onClick={prevSlide} size={30} />
-                </div>
-                {/* Right Arrow */}
-                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                    <BsChevronCompactRight onClick={nextSlide} size={30} />
-                </div>
-                <div className='flex top-4 justify-center py-2'>
-                    {slides.map((slide, slideIndex) => (
-                        <div
-                            key={slideIndex}
-                            onClick={() => goToSlide(slideIndex)}
-                            className='text-2xl cursor-pointer'
-                        >
-                            <RxDotFilled />
-                        </div>
-                    ))}
+        <div id="jst_photos">
+            <div className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
+                <h1 className="mx-5 py-5 px-2 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Photos</h1>
+                <div className='max-w-[1170px] h-[780px] w-full m-auto py-8 px-4 relative group'>
+                    <div
+                        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+                        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+                    >
+                    </div>
+                    {/* Left Arrow */}
+                    <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white   cursor-pointer'>
+                        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+                    </div>
+                    {/* Right Arrow */}
+                    <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                        <BsChevronCompactRight onClick={nextSlide} size={30} />
+                    </div>
+                    <div className='flex top-4 justify-center py-2'>
+                        {slides.map((slide, slideIndex) => (
+                            <div
+                                key={slideIndex}
+                                onClick={() => goToSlide(slideIndex)}
+                                className='text-2xl cursor-pointer'
+                            >
+                                <RxDotFilled />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
