@@ -55,7 +55,7 @@ const PhotoPage = () => {
         <div id="jst_photos">
             <div className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
                 <h1 className="mx-5 py-5 px-2 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Photos</h1>
-                <div className='max-w-[1170px] h-[780px] w-full m-auto py-8 px-4 relative group'>
+                <div className='max-w-[1050px] h-[700px] w-full mx-auto pt-8 pb-16 px-4 relative group'>
                     <div
                         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
