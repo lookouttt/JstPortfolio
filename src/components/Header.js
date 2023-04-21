@@ -29,7 +29,7 @@ const Header = () => {
                     <a href="#jst_photos" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
                         Photos
                     </a>
-                    <a href="#responsive-header" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500">
+                    <a href="#contact_page" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500">
                         Contact
                     </a>
                 </div>
