@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import validateContactForm from '../utils/validateContactForm';
 
-const handleSubmit = (values) => {
+const handleSubmit = (values, actions) => {
     const comment = {
         firstName: values.firstName,
         lastName: values.lastName,
@@ -10,6 +10,8 @@ const handleSubmit = (values) => {
         date: new Date(Date.now()).toISOString()
     };
     alert(JSON.stringify(values, null, 2));
+    actions.setSubmitting(false);
+    actions.resetForm({ values: ''});
     console.log("comment: ", comment);
     // fetchContactForm(comment);
 };

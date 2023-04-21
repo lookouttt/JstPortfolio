@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Bars3Icon} from '../../node_modules/@heroicons/react/24/outline'
+import {HiBars3} from 'react-icons/hi2'
 import jst_logo from '../app/assets/img/jst_round.png';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
             </div>
             <div className='block md:hidden'>
                 <button className="flex items-center px-2 py-2 border rounded border-black hover:text-gray-500 hover:border-gray-500" type='button' onClick={() => setMenuOpen(!menuOpen)}>
-                    <Bars3Icon className='h-6 w-6'/>
+                    <HiBars3 className='h-6 w-6'/>
                 </button>
             </div>
             <div className={"w-full block md:flex md:items-center md:w-auto" + (menuOpen ? " flex" : " hidden" ) }>
