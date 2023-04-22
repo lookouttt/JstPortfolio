@@ -30,8 +30,8 @@ const ContactPage = () => {
         <div id="contact_page">
             <div className="container mx-auto grid md:grid-cols-2 my-32">
                 <div className="container mx-auto text-center md:text-left md:pl-12">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Drop me a line</h1>
-                    <h5 className="mt-5 text-lg sm:text-xl md:text-2xl lg:text-3xl">I'd love to hear from you.</h5>
+                    <h1 className="px-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Drop me a line</h1>
+                    <h5 className="mt-5 px-10 text-lg sm:text-xl md:text-2xl lg:text-3xl">I would love to hear from you. Please fill out the form below to let me know how I can assist you with your web development needs. I also welcome any feedback that you have on my site as I am always looking for ways to enhance and improve it.</h5>
                 </div>
                 <div className="container mx-auto max-w-screen-sm px-16 md:px-5">
                     <Formik 
