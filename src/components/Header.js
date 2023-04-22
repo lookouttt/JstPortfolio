@@ -7,8 +7,12 @@ const Header = () => {
     return (
         <nav className="sticky top-0 flex items-center justify-between flex-wrap bg-amber-50 p-3 z-50">
             <div className="flex items-center flex-shrink-0 mr-6">
-                <img className='pl-2 w-30 h-16 md:h-20' src={ jst_logo }></img>
-                <span className='font-allison font-semibold text-4xl md:text-5xl p-4 tracking-tight'>Jeffrey S Turner</span>
+                <a href="#">
+                    <img className='pl-2 w-30 h-16 md:h-20' src={ jst_logo }></img>
+                </a>
+                <a href="#">
+                    <span className='font-allison font-semibold text-4xl md:text-5xl p-4 tracking-tight'>Jeffrey S Turner</span>
+                </a>
             </div>
             <div className='block md:hidden'>
                 <button className="flex items-center px-2 py-2 border rounded border-black hover:text-gray-500 hover:border-gray-500" type='button' onClick={() => setMenuOpen(!menuOpen)}>
