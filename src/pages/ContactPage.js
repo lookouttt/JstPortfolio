@@ -17,7 +17,7 @@ const handleSubmit = (values, actions) => {
 };
 
 const styles = {
-    label: 'block text-gray-700 text-sm font-bold mt-5 pt-2 pb-1',
+    label: 'block text-gray-700 text-sm font-bold mt-2 pt-2 pb-1',
     field:
       'bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none',
     button:
@@ -28,12 +28,12 @@ const styles = {
 const ContactPage = () => {
     return (
         <div id="contact_page">
-            <div className="container mx-auto grid grid-cols-2 my-32">
-                <div className="container mx-auto">
+            <div className="container mx-auto grid md:grid-cols-2 my-32">
+                <div className="container mx-auto text-center md:text-left md:pl-12">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Drop me a line</h1>
                     <h5 className="mt-5 text-lg sm:text-xl md:text-2xl lg:text-3xl">I'd love to hear from you.</h5>
                 </div>
-                <div className="container mx-auto max-w-screen-sm">
+                <div className="container mx-auto max-w-screen-sm px-16 md:px-5">
                     <Formik 
                         initialValues={
                             {
@@ -80,7 +80,7 @@ const ContactPage = () => {
                             <Field
                                 name='commentText'
                                 as='textarea'
-                                rows='9'
+                                rows='7'
                                 className={styles.field}
                             />
                             <ErrorMessage name='commentText'>

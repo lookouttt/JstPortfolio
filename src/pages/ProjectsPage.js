@@ -7,9 +7,9 @@ const ProjectsPage = () => {
         <div id="jst_projects">
             <div className="bg-gradient-to-b from-stone-900 from-10% via-stone-400 via-40% to-stone-200 to-90% pb-10">
                 <h1 className="mx-5 py-5 px-2 flex-initial w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-slate-50">My Projects</h1>
-                <div className="container mx-auto grid grid-cols-3">
+                <div className="container mx-auto grid md:grid-cols-3">
                     <div className="container mx-auto overflow-hidden my-10 p-3">
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                             <img className="w-full" src={jst_pic} alt="Sunset in the mountains"/>
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2">My Portfolio Page</div>
@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                         </div>
                     </div>
                     <div className="container mx-auto overflow-hidden my-10 p-3">
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                             <img className="w-full" src={hist_pic} alt="Sunset in the mountains"/>
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2">Music Historeum</div>
@@ -31,7 +31,7 @@ const ProjectsPage = () => {
                         </div>
                     </div>
                     <div className="container mx-auto overflow-hidden my-10 p-3">
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+                        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
                             <img className="w-full" src={dbd_pic} alt="Sunset in the mountains"/>
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2">Dad's Best Dogs</div>
