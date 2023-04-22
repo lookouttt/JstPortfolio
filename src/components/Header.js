@@ -17,19 +17,20 @@ const Header = () => {
             </div>
             <div className={"w-full block md:flex md:items-center md:w-auto" + (menuOpen ? " flex" : " hidden" ) }>
                 <div className="inline-block px-2 py-2 leading-none text-md md:flex-grow mt-4">
-                    <a href="#" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5"
+                        onClick={() => { setMenuOpen(!menuOpen); return true}}>
                         Home
                     </a>
-                    <a href="#jst_about" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_about" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5" onClick={() => { setMenuOpen(!menuOpen); return true}}>
                         About
                     </a>
-                    <a href="#jst_projects" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_projects" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5" onClick={() => { setMenuOpen(!menuOpen); return true}}>
                         Projects
                     </a>
-                    <a href="#jst_photos" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5">
+                    <a href="#jst_photos" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500 mr-5" onClick={() => { setMenuOpen(!menuOpen); return true}}>
                         Photos
                     </a>
-                    <a href="#contact_page" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500">
+                    <a href="#contact_page" className="block font-semibold mt-4 md:inline-block md:mt-0 hover:text-gray-500" onClick={() => { setMenuOpen(!menuOpen); return true}}>
                         Contact
                     </a>
                 </div>
