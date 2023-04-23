@@ -18,7 +18,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="inline-block px-5 py-2 leading-none text-md mt-4">
-                        <a href="https://www.linkedin.com/in/jeff-turner-887815186/">
+                        <a href="https://www.linkedin.com/in/jeffreysturner513/">
                             <FaLinkedin className='h-6 w-6'/>
                         </a>
                     </div>
