@@ -6,7 +6,7 @@ const ProjectsPage = () => {
     return (
         <div id="jst_projects">
             <div className="bg-gradient-to-b from-stone-900 from-4% lg:from-10% via-stone-400 via-40% to-stone-200 to-90% pb-10">
-                <h1 className="mx-5 py-5 px-2 flex-initial w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-slate-50">My Projects</h1>
+                <h1 className="mx-5 py-5 px-2 flex-initial w-1/2 text-slate-50">My Projects</h1>
                 <div className="container mx-auto grid lg:grid-cols-3">
                     <a href="https://www.musichistoreum.com">
                         <div className="container mx-auto overflow-hidden my-10 p-3">

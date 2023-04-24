@@ -54,10 +54,10 @@ const PhotoPage = () => {
     return (
         <div id="jst_photos">
             <div className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
-                <h1 className="mx-5 py-5 px-2 flex-initial text-2xl sm:text-3xl md:text-4xl lg:text-5xl">My Photos</h1>
-                <h1 className="mx-5 py-5 px-2 flex-initial text-md sm:text-lg md:text-xl lg:text-2xl">
+                <h1 className="mx-5 py-5 px-2 flex-initial">My Photos</h1>
+                <h2 className="mx-5 py-5 px-2 flex-initial">
                     Over the years, I have been an occasional hobbyist photographer. As I move into web development, I am further developing my skills as a photographer. This allows me to provide the option to include original photographs as part of the projects that I build. Enjoy the sample photos below.
-                </h1>
+                </h2>
                 <div className='max-w-[900px] aspect-[3/2] mx-auto pt-8 pb-16 px-4 relative group'>
                     <div
                         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

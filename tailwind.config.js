@@ -8,8 +8,8 @@ module.exports = {
     },
     fontFamily: {
         allison: ["Allison", "cursive"],
-        roboto: ['Roboto', "sans-serif"],
-        roboto_slab: ['Roboto Slab', "serif"],
+        sans: ['Roboto', "sans-serif"],
+        serif: ['Roboto Slab', "serif"],
     },
   },
   plugins: [],
