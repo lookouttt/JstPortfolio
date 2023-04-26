@@ -3,6 +3,7 @@ import validateContactForm from '../utils/validateContactForm';
 
 const handleSubmit = (values, actions) => {
     const comment = {
+        transport: "jst",
         firstName: values.firstName,
         lastName: values.lastName,
         email: values.email,

@@ -23,7 +23,7 @@ const AboutPage = () => {
                 </div>
                 <div className="container mx-auto text-center pb-10 sm:pb-20">
                     <a href="./JeffTurnerResume2023.pdf" download>
-                        <button class="bg-gray-400 hover:bg-amber-50 p-2 rounded">
+                        <button className="bg-gray-400 hover:bg-amber-50 p-2 rounded">
                             <span className="inline-flex">
                                 <GrDocumentPdf className='h-4 w-4 md:h-6 md:w-6 mt-1 md:mt-0 mx-auto'/>
                                 <p className="md:text-lg text-md ml-4">Download Resume</p>
