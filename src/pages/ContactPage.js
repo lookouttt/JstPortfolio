@@ -28,7 +28,7 @@ const handleSubmit = (values, actions) => {
 const styles = {
     label: 'block text-gray-700 text-sm font-bold mt-2 pt-2 pb-1',
     field:
-      'bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none',
+      'bg-stone-300 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none',
     button:
       ' bg-gray-700 text-white font-bold mt-10 py-2 px-4 w-full rounded hover:bg-gray-600',
     errorMsg: 'text-red-500 text-sm',
@@ -36,8 +36,8 @@ const styles = {
 
 const ContactPage = () => {
     return (
-        <div id="contact_page">
-            <div className="container mx-auto grid md:grid-cols-2 my-32">
+        <div className="bg-stone-200" id="contact_page">
+            <div className="container mx-auto grid md:grid-cols-2 py-32">
                 <div className="container mx-auto text-center md:text-left md:pl-12">
                     <h1 className="px-10">Drop me a line</h1>
                     <h2 className="mt-5 px-10">I would love to hear from you. Please fill out the form to let me know how I can assist you with your web development needs. I also welcome any feedback that you have on my site as I am always looking for ways to enhance and improve it.</h2>

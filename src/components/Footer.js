@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='block text-center text-xs px-16 pb-5'>
-                All images on this site are original images except for the light bulb image by <a href="https://pixabay.com/users/blendertimer-9538909/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6123604">Daniel Roberts</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6123604">Pixabay</a> and the LP collection image by <a href="https://pixabay.com/users/diogorodarte-510593/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1894855">Diogo Rodarte Jovem</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1894855">Pixabay</a> 
+                 The light bulb image above is by <a href="https://pixabay.com/users/blendertimer-9538909/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6123604">Daniel Roberts</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6123604">Pixabay</a> and the LP collection image is by <a href="https://pixabay.com/users/diogorodarte-510593/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1894855">Diogo Rodarte Jovem</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1894855">Pixabay</a> 
             </div>
         </div>
     );
