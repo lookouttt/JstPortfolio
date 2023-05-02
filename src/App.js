@@ -5,6 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import PhotoPage from "./pages/PhotoPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
+import TestAccordion from "./pages/TestAccordion";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <LandingPage />
             <AboutPage />
             <ProjectsPage />
+            <TestAccordion />
             <PhotoPage />
             <ContactPage />
             <Footer />
