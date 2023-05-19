@@ -4,7 +4,7 @@ const LandingPage = () => {
     return (
         <div>
             <div 
-                className="bg-gradient-to-b from-stone-200 from-10% via-stone-400 via-60% to-stone-600 to-90%">
+                className="bg-gradient-to-b from-stone-300 from-10% via-stone-400 via-50% to-stone-600 to-90%">
                     <div className="container m-auto grid grid-cols-2">
                         <div className="container mx-auto text-gray-800 py-10 sm:py-20 md:py-30 lg:py-40">
                             <h1 className="py-5 px-5 flex-initial">My name is Jeff</h1>
